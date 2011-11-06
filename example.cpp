@@ -15,7 +15,7 @@ SerialInput serNum;
 
 void setup() {
 	Serial.begin(9600);
-	serNum.setDecimalChar(',');
+	serNum.setDecimalChar('.');
 }
 
 void loop() {
@@ -26,7 +26,7 @@ void loop() {
 			serNum.error = false; // clear error flag
 		}
 		if (serNum.numberReady) {
-			Serial.print("Recv: ");
+			Serial.print("Recv'd: ");
 			Serial.println(serNum.receivedNumber);
 			serNum.clearNumber();
 		}
