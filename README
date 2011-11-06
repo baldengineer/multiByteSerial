@@ -1,0 +1,14 @@
+multi Byte Serial Library for Arduino
+ release:  1.0,  November 5, 2011
+"Serial, it's what is for breakfast."
+
+by:  James Lewis (jamesC4S), byerly0503@gmail.com
+
+
+Version 1.0 of this library includes support for taking values from the serial terminal and converting
+to their numeric values.  
+
+While similar functionality could be achieved with a call to atoi(), this library takes the step of throwing out
+characters like letters.  Additionally flags are available when an error occurs.
+
+Tested against Arduino 0022.
